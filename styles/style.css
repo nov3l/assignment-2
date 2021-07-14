@@ -1,0 +1,377 @@
+/*--======================== All CSS Link Here ========================--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*--======================== Common CSS Here ========================--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--======================== Banner CSS Here ========================--*/
+
+#banner{
+    background-color: #2D25A0;
+}
+.banner-container{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-bottom: 86px;
+}
+.banner-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-text{
+    position: relative;
+    top: 20px;
+    transition: transform 3s;
+}
+.banner-text:hover{
+    transform: translateY(20px);
+}
+.banner-text h1{
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    width: 485px;
+    margin-bottom: 27px;
+}
+.banner-text button{
+    all: unset;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.banner-text button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.banner-text button a i{
+    margin-left: 8px;
+}
+.banner-image{
+    width: 556px;
+    height: 438px;
+    transition: transform 2s;
+}
+.banner-image:hover{
+    transform: translateX(-30px);
+}
+.banner-image img{
+    width: 100%;
+}
+/*--======================== Players CSS Here ========================--*/
+
+#players{
+    margin-bottom: 165px;
+}
+.players-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.players-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    width: 330px;
+    padding: 15px 15px 33px 15px;
+}
+.player{
+    box-shadow: 10px 10px 30px lightgrey;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player h2{
+    font-weight: 700;
+    font-size: 28px;
+}
+.player p{
+    font-weight: 400;
+    font-size: 16px;
+    width: 300px;
+}
+
+/*--======================== All Highlights CSS Here ========================--*/
+
+#all-highlights{
+    margin-bottom: 160px;
+}
+.highlights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.highlight-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.highlight-text{
+    position: relative;
+    top: 60px;
+}
+.highlight-text h2{
+    width: 470px;
+    font-weight: 700;
+    font-size: 48px;
+}
+.highlight-text p{
+    width: 400px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.highlight-text button{
+    all: unset;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.highlight-text button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.highlight-text button a i{
+    margin-left: 8px;
+}
+.highlight-image{
+    width: 567px;
+    height: 427px;
+}
+.highlight-image img{
+    width: 100%;
+}
+
+/*--======================== Sponsors CSS Here ========================--*/
+
+#sponsors{
+    background-color: lightgrey;
+    margin-bottom: 70px;
+}
+.sponsors-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+.sponsors-items{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+}
+.sponsors-items img{
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+}
+
+/*--======================== Fieldset CSS Here ========================--*/
+
+.fieldset{
+    margin: 0 100px;
+    border: 10px solid #2D25A0;
+    margin-bottom: 70px;
+}
+.fieldset-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    padding: 100px;
+}
+legend{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+}
+.fieldset-items h2{
+    font-weight: 400;
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+
+/*--======================== Footer CSS Here ========================--*/
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer-logo{
+    width: 480px;
+    height: 110px;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-icons a i{
+    color: gray;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 100px;
+    margin-right: 14px;
+}
+.footer-icons, .copyright-text{
+    margin-top: 20px;
+}
+.copyright-text{
+    margin-bottom: 63px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/*--======================== @@@@@@@@@@@@@@@@@@@ ========================--*/
+/*--======================== ### Media Query ### ========================--*/
+/*--======================== @@@@@@@@@@@@@@@@@@@ ========================--*/
+
+
+/*--======================== Mobile Responsive CSS Here ========================--*/
+
+@media only screen and (max-width: 688px) {
+
+    .banner-container{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .banner-text h1{
+        width: 100%;
+    }
+    .banner-image{
+        width: 100%;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    .banner-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 100px;
+    }
+
+    .players-grid{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+    }
+    #players{
+        margin-bottom: 70px;
+    }
+
+    .highlight-text h2{
+        width: 100%;
+    }
+    .highlight-text p{
+        width: 100%;
+    }
+    .highlight-image{
+        width: 100%;
+    }
+    .highlight-image img{
+        width: 100%;
+    }
+    .highlight-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 100px;
+    }    
+    #all-highlights{
+        margin-bottom: 0;
+    }
+    .sponsors-items{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0px;
+    }
+    .fieldset{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid #2D25A0;
+        margin-bottom: 70px;
+    }
+    .fieldset-items{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer-container, .footer-logo{
+        width: 100%;
+    }
+    
+}
+
+/*--======================== Tablet Responsive CSS Here ========================--*/
+
+@media only screen and (min-width: 700px) and (max-width: 992px){
+     .banner-container{
+        width: 100%;
+    }
+    .banner-text h1{
+        width: 100%;
+    }
+    .banner-image{
+        width: 100%;
+        position: relative;
+        top: 100px;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    .banner-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .players-grid{ 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #players{
+        margin-bottom: 70px;
+    }
+    .highlight-text h2{
+        width: 100%;
+    }
+    .highlight-text p{
+        width: 100%;
+    }
+    .highlight-image{
+        width: 100%;
+        position: relative;
+        top: 150px;
+    }
+    .highlight-image img{
+        width: 100%;
+    }
+    .highlight-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+     
+    .sponsors-items{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .footer-container, .footer-logo{
+        width: 100%;
+    }
+    .footer-logo{
+        margin-bottom: 40px;
+    }
+}
